@@ -6,6 +6,12 @@ This is my main documentation
 
 This is my TOC content
 
-#### Description
+#### Lightbox Demo
 
-This is my description placeholder
+The following images source will render in image gallery:
+
+![GitHub Logo](assets/GitHub%20Logo.jpg)
+
+![GH Wallpaper](assets/GH%20Wallpaper.jpg)
+
+![AI](assets/AI.jpg)

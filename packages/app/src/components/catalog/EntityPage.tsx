@@ -58,6 +58,7 @@ import {
 import { TechDocsAddons } from '@backstage/plugin-techdocs-react';
 import {
   ExpandableNavigation,
+  LightBox,
   ReportIssue,
   TextSize,
 } from '@backstage/plugin-techdocs-module-addons-contrib';
@@ -68,6 +69,7 @@ const techdocsContent = (
       <ReportIssue />
       <TextSize />
       <ExpandableNavigation />
+      <LightBox />
     </TechDocsAddons>
   </EntityTechdocsContent>
 );

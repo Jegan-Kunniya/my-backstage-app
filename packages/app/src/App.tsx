@@ -22,6 +22,7 @@ import {
 import { TechDocsAddons } from '@backstage/plugin-techdocs-react';
 import {
   ExpandableNavigation,
+  LightBox,
   ReportIssue,
   TextSize,
 } from '@backstage/plugin-techdocs-module-addons-contrib';
@@ -78,6 +79,7 @@ const routes = (
         <ReportIssue />
         <TextSize />
         <ExpandableNavigation />
+        <LightBox />
       </TechDocsAddons>
     </Route>
     <Route path="/create" element={<ScaffolderPage />} />
