@@ -1,6 +1,6 @@
 site_name: 'my-backstage-app'
-repo_url: https://github.com/backstage/backstage/
-edit_uri: tree/master/docs/
+repo_url: https://github.com/Jegan-Kunniya/my-backstage-app
+edit_uri: tree/exp/techdocs-local-demo/docs
 nav:
   - Home: index.md
 plugins:
