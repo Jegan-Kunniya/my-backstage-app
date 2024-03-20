@@ -56,12 +56,18 @@ import {
 } from '@backstage/catalog-model';
 
 import { TechDocsAddons } from '@backstage/plugin-techdocs-react';
-import { ReportIssue } from '@backstage/plugin-techdocs-module-addons-contrib';
+import {
+  ExpandableNavigation,
+  ReportIssue,
+  TextSize,
+} from '@backstage/plugin-techdocs-module-addons-contrib';
 
 const techdocsContent = (
   <EntityTechdocsContent>
     <TechDocsAddons>
       <ReportIssue />
+      <TextSize />
+      <ExpandableNavigation />
     </TechDocsAddons>
   </EntityTechdocsContent>
 );

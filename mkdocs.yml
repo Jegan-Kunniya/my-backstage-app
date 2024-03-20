@@ -1,0 +1,7 @@
+site_name: 'my-backstage-app'
+repo_url: https://github.com/backstage/backstage/
+edit_uri: tree/master/docs/
+nav:
+  - Home: index.md
+plugins:
+  - techdocs-core
