@@ -61,7 +61,10 @@ import {
   LightBox,
   ReportIssue,
 } from '@backstage/plugin-techdocs-module-addons-contrib';
-import { TextSize } from '@internal/backstage-plugin-techdocs-content-renderer/src/plugin';
+import {
+  TextSize,
+  TextViewer,
+} from '@internal/backstage-plugin-techdocs-content-renderer/src/plugin';
 
 const techdocsContent = (
   <EntityTechdocsContent>
@@ -70,6 +73,7 @@ const techdocsContent = (
       <TextSize />
       <ExpandableNavigation />
       <LightBox />
+      <TextViewer />
     </TechDocsAddons>
   </EntityTechdocsContent>
 );

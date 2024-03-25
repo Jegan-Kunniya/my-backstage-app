@@ -143,7 +143,7 @@ const useStyles = makeStyles(theme => ({
 export const TextSizeAddon = () => {
   const classes = useStyles();
   const theme = useTheme();
-  const [body] = useShadowRootElements(['body']);
+  const [body] = useShadowRootElements(['h1']);
 
   const [value, setValue] = useState<number>(() => {
     const initialValue = localStorage?.getItem(settings.key);

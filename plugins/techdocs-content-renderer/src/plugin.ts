@@ -8,6 +8,7 @@ import {
 } from '@backstage/plugin-techdocs-react';
 import { rootRouteRef } from './routes';
 import { TextSizeAddon } from './components/TextSize/TextSize';
+import { TextViewerAddon } from './components/TextViewer';
 
 export const techdocsContentRendererPlugin = createPlugin({
   id: 'techdocs-content-renderer',
@@ -31,5 +32,13 @@ export const TextSize = techdocsContentRendererPlugin.provide(
     name: 'TextSize',
     location: TechDocsAddonLocations.Settings,
     component: TextSizeAddon,
+  }),
+);
+
+export const TextViewer = techdocsContentRendererPlugin.provide(
+  createTechDocsAddonExtension({
+    name: 'TextViewer',
+    location: TechDocsAddonLocations.Content,
+    component: TextViewerAddon,
   }),
 );

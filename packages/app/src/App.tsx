@@ -38,7 +38,10 @@ import { CatalogGraphPage } from '@backstage/plugin-catalog-graph';
 import { RequirePermission } from '@backstage/plugin-permission-react';
 import { catalogEntityCreatePermission } from '@backstage/plugin-catalog-common/alpha';
 import { TechdocsContentRendererPage } from '@internal/backstage-plugin-techdocs-content-renderer';
-import { TextSize } from '@internal/backstage-plugin-techdocs-content-renderer/src/plugin';
+import {
+  TextSize,
+  TextViewer,
+} from '@internal/backstage-plugin-techdocs-content-renderer/src/plugin';
 
 const app = createApp({
   apis,
@@ -81,6 +84,7 @@ const routes = (
         <TextSize />
         <ExpandableNavigation />
         <LightBox />
+        <TextViewer />
       </TechDocsAddons>
     </Route>
     <Route path="/create" element={<ScaffolderPage />} />
