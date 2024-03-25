@@ -60,8 +60,8 @@ import {
   ExpandableNavigation,
   LightBox,
   ReportIssue,
-  TextSize,
 } from '@backstage/plugin-techdocs-module-addons-contrib';
+import { TextSize } from '@internal/backstage-plugin-techdocs-content-renderer/src/plugin';
 
 const techdocsContent = (
   <EntityTechdocsContent>

@@ -24,7 +24,6 @@ import {
   ExpandableNavigation,
   LightBox,
   ReportIssue,
-  TextSize,
 } from '@backstage/plugin-techdocs-module-addons-contrib';
 import { UserSettingsPage } from '@backstage/plugin-user-settings';
 import { apis } from './apis';
@@ -39,6 +38,7 @@ import { CatalogGraphPage } from '@backstage/plugin-catalog-graph';
 import { RequirePermission } from '@backstage/plugin-permission-react';
 import { catalogEntityCreatePermission } from '@backstage/plugin-catalog-common/alpha';
 import { TechdocsContentRendererPage } from '@internal/backstage-plugin-techdocs-content-renderer';
+import { TextSize } from '@internal/backstage-plugin-techdocs-content-renderer/src/plugin';
 
 const app = createApp({
   apis,
@@ -102,7 +102,10 @@ const routes = (
     </Route>
     <Route path="/settings" element={<UserSettingsPage />} />
     <Route path="/catalog-graph" element={<CatalogGraphPage />} />
-    <Route path="/techdocs-content-renderer" element={<TechdocsContentRendererPage />} />
+    <Route
+      path="/techdocs-content-renderer"
+      element={<TechdocsContentRendererPage />}
+    />
   </FlatRoutes>
 );
 
